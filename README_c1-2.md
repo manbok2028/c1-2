@@ -573,7 +573,7 @@ Text-to-Video 방식은 장면의 구도와 캐릭터가 크게 변할 가능성
 
 | 구분 | 1차 도구 | 대체 도구 |
 |---|---|---|
-| 이미지 생성 | ChatGPT 이미지 또는 Midjourney | Adobe Firefly, Ideogram |
+| 이미지 생성 | 제미나이 이미지 또는 Midjourney | Adobe Firefly, Ideogram |
 | 영상 변환 | Kling AI | Runway, Luma Dream Machine, Pika |
 | 음성 생성 | ElevenLabs | Typecast, CLOVA Dubbing |
 | 음악 생성 | Suno AI | Udio |
