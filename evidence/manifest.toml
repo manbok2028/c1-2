@@ -23,5 +23,8 @@ files = ["assets/video/ttokttok-ad-horizontal.mp4"]
 
 [[requirements]]
 id = "vertical_delivery_video"
-status = "pending"
-files = []
+status = "complete"
+files = [
+  "assets/video/ttokttok-ad-vertical.mp4",
+  "assets/images/vertical-delivery-preview.png",
+]

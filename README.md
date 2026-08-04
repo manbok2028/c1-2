@@ -1,7 +1,7 @@
 # Codyssey C1-2 · AI 브랜드 광고 영상 제작
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/deliverable-needs%20vertical%20export-f59e0b)
+![Status](https://img.shields.io/badge/deliverable-vertical%20export%20ready-22c55e)
 
 > AI 개인비서 브랜드 **똑똑이(TTOKTTOK AI)**의 가치를 10초 안에 전달하는 생성형 AI 기반 광고 영상 프로젝트입니다.
 
@@ -60,32 +60,32 @@ flowchart LR
 | 브랜드 전략·스토리보드 | ✅ 완료 | [상세 기획서](docs/archive/production-report.md), 스토리보드 이미지 |
 | 프롬프트 수정 전·후 | ✅ 완료 | 비교 이미지와 기획서 |
 | AI 기반 제작 파이프라인 | ✅ 문서화됨 | 기획 → 생성 → 검수 → 편집 과정 |
-| 최종 MP4 파일 | ✅ 존재 | [`assets/video/ttokttok-ad-horizontal.mp4`](assets/video/ttokttok-ad-horizontal.mp4) |
-| 세로형 9:16 납품본 | ⚠️ 재출력 필요 | 현재 파일은 1280×720 가로형 |
-| 10초 이내 납품본 | ⚠️ 재출력 필요 | 현재 파일 길이는 10.03초 |
+| 가로형 원본 MP4 | ✅ 보존 | [`assets/video/ttokttok-ad-horizontal.mp4`](assets/video/ttokttok-ad-horizontal.mp4) |
+| 세로형 9:16 납품본 | ✅ 완료 | [`assets/video/ttokttok-ad-vertical.mp4`](assets/video/ttokttok-ad-vertical.mp4) |
+| 10초 이내 납품본 | ✅ 완료 | 9.916667초, H.264/AAC |
 
-현재 MP4는 **10.03초, 1280×720**입니다. 기획서의 9:16 세로형·10초 이내 규격을 만족하는 최종 납품본으로 표기하지 않습니다. 원본 CapCut 프로젝트 또는 편집 소스에서 **1080×1920, 최대 10.00초**로 재출력한 뒤 `assets/video/ttokttok-ad-vertical.mp4`로 추가해야 합니다.
+기존 MP4는 **10.03초, 1280×720**의 가로형 원본으로 그대로 보존합니다. 별도 납품본은 원본의 중심 장면과 오디오를 유지하고, 흐린 배경으로 세로 캔버스를 확장해 **1080×1920, 9.916667초, H.264/AAC**로 출력했습니다.
+
+![세로형 납품본 실제 출력 프레임](assets/images/vertical-delivery-preview.png)
 
 ## 제작 규격
 
 | 구분 | 제출 기준 | 현재 상태 |
 |---|---|---|
-| 화면 비율 | 9:16 세로형 | 재출력 필요 |
-| 해상도 | 1080×1920 권장 | 재출력 필요 |
-| 길이 | 10초 이내 | 0.03초 초과 |
-| 영상 코덱 | H.264 권장 | 원본 편집본에서 확인 필요 |
-| 오디오 | AI 음성·BGM·효과음 중 하나 이상 | 상세 기획서에 설계 기록 |
+| 화면 비율 | 9:16 세로형 | ✅ 9:16 |
+| 해상도 | 1080×1920 권장 | ✅ 1080×1920 |
+| 길이 | 10초 이내 | ✅ 9.916667초 |
+| 영상 코덱 | H.264 권장 | ✅ H.264 |
+| 오디오 | AI 음성·BGM·효과음 중 하나 이상 | ✅ AAC 오디오 포함 |
 | 스톡·직접 촬영 | 사용 여부 명시 | 미사용으로 문서화됨 |
 
-## 재출력 체크리스트
+## 재출력 기록
 
-1. CapCut에서 프로젝트 캔버스를 `9:16 / 1080×1920`으로 설정합니다.
-2. 4개 장면이 안전 영역 안에 오도록 재배치합니다.
-3. 타임라인 마지막 프레임을 10.00초 이전으로 잘라냅니다.
-4. 로고와 CTA가 마지막 2.5초에 충분히 노출되는지 확인합니다.
-5. H.264 MP4로 내보낸 뒤 `assets/video/ttokttok-ad-vertical.mp4`에 저장합니다.
-6. `evidence/manifest.toml`의 `vertical_delivery_video` 상태를 `complete`로 바꿉니다.
-7. 검증 명령을 실행한 뒤 `main`에 직접 반영합니다.
+1. 기존 가로형 원본과 오디오를 보존했습니다.
+2. 원본 장면은 중앙에 유지하고, 동일 장면을 흐린 배경으로 확장해 세로 캔버스를 구성했습니다.
+3. 마지막 프레임은 9.916667초로 제한했습니다.
+4. 실제 출력 프레임을 `assets/images/vertical-delivery-preview.png`에 증빙으로 저장했습니다.
+5. `evidence/manifest.toml`과 적합성 문서를 완료 상태로 갱신했습니다.
 
 ## 검증
 
