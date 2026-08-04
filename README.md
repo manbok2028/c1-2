@@ -14,7 +14,7 @@
 | 서사 | 문제 제시 → AI 등장 → 업무 해결 → 브랜드 CTA |
 | 제작 방식 | Text-to-Image → 검수 → Image-to-Video → 편집·오디오 통합 |
 | 주요 도구 | 이미지 생성 AI, Kling/Runway, ElevenLabs, Suno, CapCut |
-| 현재 산출물 | 스토리보드, 프롬프트 개선 비교, 최종 MP4, 상세 기획서 |
+| 현재 산출물 | 스토리보드, 프롬프트 개선 비교, 가로형 원본, 세로형 납품본, 출력 증빙, 상세 기획서 |
 
 ## 브랜드 메시지
 
@@ -102,8 +102,8 @@ python -m unittest discover -s tests -v
 ```text
 .
 ├─ assets/
-│  ├─ images/             # 스토리보드와 프롬프트 개선 이미지
-│  └─ video/              # 현재본과 향후 세로형 납품본
+│  ├─ images/             # 스토리보드·프롬프트 비교·세로형 출력 증빙
+│  └─ video/              # 가로형 원본과 세로형 납품본
 ├─ docs/
 │  ├─ archive/            # 기존 상세 기획서 원문
 │  ├─ mission/            # 미션 적합성 판정
@@ -118,5 +118,6 @@ python -m unittest discover -s tests -v
 
 - [미션 적합성 검토](docs/mission/compliance.md)
 - [영상 납품 규격](docs/production/delivery-spec.md)
+- [자산 역할표](docs/production/asset-register.md)
 - [기존 상세 기획서](docs/archive/production-report.md)
 - [기여·운영 규칙](CONTRIBUTING.md)
