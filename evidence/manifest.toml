@@ -1,0 +1,27 @@
+version = 1
+mission = "AI 브랜드 광고 영상 제작"
+
+[[requirements]]
+id = "brand_strategy"
+status = "complete"
+files = ["docs/archive/production-report.md"]
+
+[[requirements]]
+id = "storyboard"
+status = "complete"
+files = ["assets/images/storyboard.png"]
+
+[[requirements]]
+id = "prompt_iteration"
+status = "complete"
+files = ["assets/images/prompt-iteration.png"]
+
+[[requirements]]
+id = "horizontal_video_source"
+status = "complete"
+files = ["assets/video/ttokttok-ad-horizontal.mp4"]
+
+[[requirements]]
+id = "vertical_delivery_video"
+status = "pending"
+files = []

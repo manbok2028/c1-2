@@ -1,0 +1,9 @@
+[project]
+name = "codyssey-c1-2"
+version = "0.1.0"
+description = "Evidence checks for the AI brand-ad mission"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+c1-2-quality = "c1_2_quality.__main__:main"
